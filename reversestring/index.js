@@ -23,19 +23,20 @@
 // }
 
 // Solution 3
-// function reverse(str) {
-//   let reversed = '';
+function reverse(str) {
+  let reversed = '';
 
-//   for (let character of str) {
-//     reversed = character + reversed;
-//   }
+  for (let character of str) {
+    reversed = character + reversed;
+  }
 
-//   return reversed;
-// }
+  return reversed;
+}
 
 // Solution 4
 function reverse(str) {
   return str.split('').reduce((rev, char) => char + rev, '');
 }
 
+// reverse('costas');
 module.exports = reverse;
